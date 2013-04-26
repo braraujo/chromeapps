@@ -10,5 +10,5 @@ git pull
 # update appengine's talk.renatomangini.com project
 
 cd app
-appcfg.py update .
+appcfg.py --oauth2 --noauth_local_webserver update .
 
