@@ -1,0 +1,13 @@
+application: talks-renatomangini-com
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /2012
+  static_dir: 2012
+
+- url: /2013
+  static_dir: 2013
+
