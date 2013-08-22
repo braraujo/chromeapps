@@ -316,6 +316,28 @@ build_lists: true
 
 ---
 
+title: Yeoman
+class: big side-img
+build_lists: true
+
+![](images/braziljs/super_dog.jpg)
+
+- Generators:
+<pre class="prettyprint" data-lang="shell">
+npm search yeoman-generator
+npm install generator-NAME
+yo NAME
+</pre>
+
+- Criar um novo:
+<pre class="prettyprint" data-lang="shell">
+npm install generator-generator
+yo generator
+...
+</pre>
+
+---
+
 title:
 content_class: vcenter flexbox
 
@@ -369,5 +391,5 @@ title:
 class: nobackground fill opaque-bg op4
 image: images/braziljs/yeoman.svg
 
-<blockquote>Com a palavra, Addy Osmani</blockquote>
+<blockquote>Roadmap:<br><div style="font-size: 36px">participante especial, <strong>Addy Osmani</strong></div></blockquote>
 
