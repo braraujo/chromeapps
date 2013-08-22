@@ -197,7 +197,7 @@ build_lists: true
 image: images/braziljs/subway_map.jpg
 
 - <p style="text-decoration: line-through;"> I18N->HTML; assets: sprites, image optim; libs e frameworks; CoffeeScript->JS->minification/obfuscation; SCSS->CSS->minification; testes unitários; regressão em headless browser; build: teste, homologação, produção; versionamento; deploy: teste, homologação, produção!</p>
-- **grunt build && grunt deploy**
+- **grunt build**
 
 
 ---
@@ -255,7 +255,7 @@ Mês seguinte, projeto novo:
 
 - copy and paste do projeto antigo, muda HTMLs, JSs, CSSs, assets
 - reza um terço
-- executa **bower build**
+- executa grunt build
 <ul style="font-size: 14px !important">
     <li>I18N->HTML
     <li> assets: sprites, image optim
@@ -282,6 +282,19 @@ image: images/braziljs/roadsigns.jpg
 
 ---
 
+title: Vida de programador front-end
+class: textonpanel nobackground fill opaque-bg op5
+image: images/braziljs/roadsigns.jpg
+build_lists: true
+
+Mês seguinte, projeto novo:
+
+- <p style="text-decoration: line-through;">copy and paste do projeto antigo, muda HTMLs, JSs, CSSs, assets; reza um terço; executa grunt build, ...</p>
+- **yo webapp**
+- **yo mycompany-webapp**
+
+---
+
 title: 
 class: nobackground fill
 image: images/braziljs/yeoman.svg
@@ -296,10 +309,10 @@ build_lists: true
 
 ![](images/braziljs/super_dog.jpg)
 
-- Automatizar a criação de apps
-- Configurar dependências
-- Configurar workflows
-- <img style="position: absolute; top: 180px; max-width: 40%" src="images/braziljs/animal_heroes.png">
+- Automatiza a criação de apps
+- Configura dependências
+- Configura workflows
+- Fieis parceiros: Bower e Grunt <img style="position: absolute; top: 180px; max-width: 40%" src="images/braziljs/animal_heroes.png">
 
 ---
 
@@ -315,4 +328,46 @@ content_class: vcenter flexbox
 title: 
 class: nobackground fill center-bg
 image: images/braziljs/elvys_fever.jpg
+content_class: vcenter flexbox
+
+<blockquote>
+<div style="font-size: 12px; text-align: center;">(is this Paul Irish?)</div>
+criando uma webapp<br>
+<div style="text-align: center"><strong>yo webapp</strong></div>
+<div style="text-align: center; font-size: 30px"><strong>yo angular</strong></div>
+<div style="text-align: center; font-size: 30px"><strong>yo angular:view</strong></div>
+</blockquote>
+
+---
+
+title: 
+class: nobackground fill center-bg
+image: images/braziljs/elvys_fever.jpg
+content_class: vcenter flexbox
+
+<blockquote>
+<div style="font-size: 12px; text-align: center;">(of course not! Paul Irish would never dance like this... would him?)</div>
+deploy no Heroku<br>
+<div style="text-align: center"><strong>yo heroku</strong></div>
+</blockquote>
+
+---
+
+title: 
+class: nobackground fill center-bg
+image: images/braziljs/tools.jpg
+content_class: vcenter flexbox
+
+<blockquote>
+criando generators<br>
+<div style="text-align: center"><strong>yo generator</strong></div>
+</blockquote>
+
+---
+
+title: 
+class: nobackground fill opaque-bg op4
+image: images/braziljs/yeoman.svg
+
+<blockquote>Com a palavra, Addy Osmani</blockquote>
 
