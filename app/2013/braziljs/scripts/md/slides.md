@@ -197,7 +197,7 @@ build_lists: true
 image: images/braziljs/subway_map.jpg
 
 - <p style="text-decoration: line-through;"> I18N->HTML; assets: sprites, image optim; libs e frameworks; CoffeeScript->JS->minification/obfuscation; SCSS->CSS->minification; testes unitários; regressão em headless browser; build: teste, homologação, produção; versionamento; deploy: teste, homologação, produção!</p>
-- **grunt build**
+- **grunt build**, **grunt test**, ...
 
 
 ---
