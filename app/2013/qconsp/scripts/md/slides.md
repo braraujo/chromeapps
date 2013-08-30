@@ -104,7 +104,7 @@ build_lists: true
     - Updating means pushing a new version to CWS
     - full CSP restrictions
     - no LocalStorage support
- 
+
 ---
 
 title: CSP (Content Security Policy)
@@ -132,7 +132,10 @@ title: Quizz
 subtitle: 10 minutes activity
 
 - Imagine you are converting your app
-- We will pick 2 cases and discuss on stage
+- Raise the potential difficulties
+    - Frameworks using CSP
+    - LocalStorage
+    - Server-side templating
 
 ---
 
@@ -149,7 +152,7 @@ class: segue dark nobackground
 
 title: Getting started
 
-- Start your app 
+- Start your app
 
     - Yeoman generator ([link](https://github.com/yeoman/generator-chromeapp#readme))
     - Sublime plugin ([link](https://sublime.wbond.net/packages/Chrome%20Apps%20and%20Extensions))
@@ -183,7 +186,6 @@ title: Managing windows
 chrome.app.window [quick API](http://www.chromeappsnow.com/search.html?q=chrome.app.window&t=a), [official doc](http://developer.chrome.com/apps/app_window.html)
 
 - methods: .create, .current
-- events
 - Object: [AppWindow](http://developer.chrome.com/apps/app_window.html#type-AppWindow)
 - Samples: windows, frameless-window, window-state
 
@@ -239,8 +241,7 @@ chrome.syncFileSystem [official doc](http://developer.chrome.com/apps/syncFileSy
 ---
 
 title: Network
-
-Many options:
+subtitle: Many options
 
 - requesting data (network client):
     - XHR cross domain: just like in the web, but cross domain
@@ -299,15 +300,6 @@ title: Messaging
 
 ---
 
-title: Hardware
-
-- USB
-- Bluetooth
-- Serial
-- Sample: adkjs
-
----
-
 title: Rich notifications
 subtitle: chrome.notifications
 
@@ -330,17 +322,83 @@ chrome.alarms [official doc](http://developer.chrome.com/apps/alarms.html)
 
 ---
 
+title: Hardware
+
+- USB
+- Bluetooth
+- Serial
+- Samples: usb-label-printer, adkjs
+
+---
+
 title: Embedding web content
 build_lists: true
 
 - Sandboxed iframe
 - Webview
-- Sample: sandboxed content
+
+---
+
+title: Embedding web content
+subtitle: Sandboxed iframe
+build_lists: true
+
+- Run "unsafe" packaged code
+- Has no access to privileged APIs
+- Send messages to it using `iframe.contentWindow.postMessage(message, targetOrigin)`
+- Receive messages in it using `window.addEventListener('message', handler)`
+- Send messages back to the embedder using `handler.source.postMessage('message', sourceOrigin)`
+- Samples: sandboxed content, sandbox
+
+---
+
+title: Embedding web content
+subtitle: Webview
+build_lists: true
+
+- Run "unsafe" external code
+- Has no access to privileged APIs
+- Send messages to it using `webview.contentWindow.postMessage(message, targetOrigin)`
+- Receive messages in it using `window.addEventListener('message', handler)`
+- Send messages back to the embedder using `handler.source.postMessage('message', sourceOrigin)`
+- Samples: browser, webview
 
 ---
 
 title: Questions?
 class: segue dark nobackground
+
+---
+
+title: Debug/test
+class: segue dark nobackground
+
+---
+
+title: Debug
+build_lists: true
+
+- DevTools
+    - apps from CWS: activate flag [enable debuging for packed apps](chrome://flags/#debug-packed-apps)
+- Apps Developer Tool
+    - activate flag [enable apps-devtool app](chrome://flags/#enable-apps-devtool-app)
+- Remote debug
+    - chrome --remote-debugging-port=9222 --load-and-launch=APPDIR
+
+
+---
+
+title: Test
+build_lists: true
+
+- Unit tests:
+    - mock chrome.* APIs
+
+- Functional/load/etc:
+    - use remote debugging and automation over debugging protocol
+    - use WebDriver
+
+- doesn't work: PhantomJS
 
 ---
 

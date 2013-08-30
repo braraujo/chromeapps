@@ -280,7 +280,12 @@ URL: https://code.google.com/p/io-2012-slides
     </hgroup>
     <article ><ul>
 <li>Imagine you are converting your app</li>
-<li>We will pick 2 cases and discuss on stage</li>
+<li>Raise the potential difficulties<ul>
+<li>Frameworks using CSP</li>
+<li>LocalStorage</li>
+<li>Server-side templating</li>
+</ul>
+</li>
 </ul></article>
  
 </slide>
@@ -313,7 +318,7 @@ URL: https://code.google.com/p/io-2012-slides
     </hgroup>
     <article ><ul>
 <li>
-<p>Start your app </p>
+<p>Start your app</p>
 <ul>
 <li>Yeoman generator (<a href="https://github.com/yeoman/generator-chromeapp#readme">link</a>)</li>
 <li>Sublime plugin (<a href="https://sublime.wbond.net/packages/Chrome%20Apps%20and%20Extensions">link</a>)</li>
@@ -368,7 +373,6 @@ URL: https://code.google.com/p/io-2012-slides
     <article ><p>chrome.app.window <a href="http://www.chromeappsnow.com/search.html?q=chrome.app.window&amp;t=a">quick API</a>, <a href="http://developer.chrome.com/apps/app_window.html">official doc</a></p>
 <ul>
 <li>methods: .create, .current</li>
-<li>events</li>
 <li>Object: <a href="http://developer.chrome.com/apps/app_window.html#type-AppWindow">AppWindow</a></li>
 <li>Samples: windows, frameless-window, window-state</li>
 </ul></article>
@@ -455,10 +459,9 @@ URL: https://code.google.com/p/io-2012-slides
   
     <hgroup>
       <h2>Network</h2>
-      <h3></h3>
+      <h3>Many options</h3>
     </hgroup>
-    <article ><p>Many options:</p>
-<ul>
+    <article ><ul>
 <li>
 <p>requesting data (network client):</p>
 <ul>
@@ -549,21 +552,6 @@ URL: https://code.google.com/p/io-2012-slides
 <slide  >
   
     <hgroup>
-      <h2>Hardware</h2>
-      <h3></h3>
-    </hgroup>
-    <article ><ul>
-<li>USB</li>
-<li>Bluetooth</li>
-<li>Serial</li>
-<li>Sample: adkjs</li>
-</ul></article>
- 
-</slide>
-
-<slide  >
-  
-    <hgroup>
       <h2>Rich notifications</h2>
       <h3>chrome.notifications</h3>
     </hgroup>
@@ -594,13 +582,61 @@ URL: https://code.google.com/p/io-2012-slides
 <slide  >
   
     <hgroup>
+      <h2>Hardware</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>USB</li>
+<li>Bluetooth</li>
+<li>Serial</li>
+<li>Samples: usb-label-printer, adkjs</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
       <h2>Embedding web content</h2>
       <h3></h3>
     </hgroup>
     <article ><ul class="build">
 <li>Sandboxed iframe</li>
 <li>Webview</li>
-<li>Sample: sandboxed content</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Embedding web content</h2>
+      <h3>Sandboxed iframe</h3>
+    </hgroup>
+    <article ><ul class="build">
+<li>Run "unsafe" packaged code</li>
+<li>Has no access to privileged APIs</li>
+<li>Send messages to it using <code>iframe.contentWindow.postMessage(message, targetOrigin)</code></li>
+<li>Receive messages in it using <code>window.addEventListener('message', handler)</code></li>
+<li>Send messages back to the embedder using <code>handler.source.postMessage('message', sourceOrigin)</code></li>
+<li>Samples: sandboxed content, sandbox</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Embedding web content</h2>
+      <h3>Webview</h3>
+    </hgroup>
+    <article ><ul class="build">
+<li>Run "unsafe" external code</li>
+<li>Has no access to privileged APIs</li>
+<li>Send messages to it using <code>webview.contentWindow.postMessage(message, targetOrigin)</code></li>
+<li>Receive messages in it using <code>window.addEventListener('message', handler)</code></li>
+<li>Send messages back to the embedder using <code>handler.source.postMessage('message', sourceOrigin)</code></li>
+<li>Samples: browser, webview</li>
 </ul></article>
  
 </slide>
@@ -613,6 +649,66 @@ URL: https://code.google.com/p/io-2012-slides
       <h3></h3>
     </hgroup>
   
+</slide>
+
+<slide class="segue dark nobackground" >
+  
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Debug/test</h2>
+      <h3></h3>
+    </hgroup>
+  
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Debug</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul class="build">
+<li>DevTools<ul class="build">
+<li>apps from CWS: activate flag <a href="chrome://flags/#debug-packed-apps">enable debuging for packed apps</a></li>
+</ul>
+</li>
+<li>Apps Developer Tool<ul class="build">
+<li>activate flag <a href="chrome://flags/#enable-apps-devtool-app">enable apps-devtool app</a></li>
+</ul>
+</li>
+<li>Remote debug<ul class="build">
+<li>chrome --remote-debugging-port=9222 --load-and-launch=APPDIR</li>
+</ul>
+</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Test</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul class="build">
+<li>
+<p>Unit tests:</p>
+<ul class="build">
+<li>mock chrome.* APIs</li>
+</ul>
+</li>
+<li>
+<p>Functional/load/etc:</p>
+<ul class="build">
+<li>use remote debugging and automation over debugging protocol</li>
+<li>use WebDriver</li>
+</ul>
+</li>
+<li>
+<p>doesn't work: PhantomJS</p>
+</li>
+</ul></article>
+ 
 </slide>
 
 <slide class="segue dark nobackground" >
