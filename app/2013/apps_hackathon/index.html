@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Building apps.</title>
+		<meta name="description" content="An apps presentation">
+		<meta name="author" content="Paul Kinlan">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/demos.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/print/pdf.css" media="print">
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			//document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+			<style>
+			  .warning { color: #aaaaff !important; }
+			  h1.warning, h1 .warning { text-shadow: 0 1px 0 #0000cc, 0 2px 0 #0000c9, 0 3px 0 #0000bb, 0 4px 0 #0000b9, 0 5px 0 #0000aa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);  }
+			  h2.warning { text-shadow: 0 1px 0 #0000cc, 0 2px 0 #0000c9, 0 3px 0 #0000bb, 0 4px 0 #0000b9, 0 5px 0 #0000aa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);  }
+			 .evergreen { color: green !important; }
+			  h1.evergreen, h1 .evergreen { text-shadow: 0 1px 0 #00cc00, 0 2px 0 #00c900, 0 3px 0 #00bb00, 0 4px 0 #00b900, 0 5px 0 #00aa00, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);  }
+			  h2.evergreen { text-shadow: 0 1px 0 #00cc00, 0 2px 0 #00c900, 0 3px 0 #00bb00, 0 4px 0 #00b900, 0 5px 0 #00aa00, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);  }
+			
+			  img.chrome { -webkit-animation: chrome-anim 0.5s linear infinite normal; }
+			
+			  @-webkit-keyframes chrome-anim {
+			    0% {
+				  -webkit-transform: rotate(0deg);
+				}
+				100% {
+				  -webkit-transform: rotate(360deg);
+				}
+			  }
+			  
+			  .play-video .present video {
+			     position: absolute;
+			     top:0;
+			     left: 0;
+			     right: 0;
+			     bottom: 0;
+			     width: 100%;
+			     height: 100%;
+			     box-shadow: initial;
+			  }
+			
+				.apps img {
+				    float: left;
+				    width: 20%;
+			      }
+			</style>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+								<section>
+			      <h2>Chrome Apps Hack-a-thon</h2>
+			      <ul>
+					 <li><span class="warning">10h00</span> - Intro
+					 <li><span class="warning">10h30</span> - Formação de times
+					 <li><span class="warning">11h00</span> - Hacking time
+					 <li><span class="warning">13h00</span> - Pizza time
+					 <li><span class="warning">14h00</span> - Hacking time
+					 <li><span class="warning">17h00</span> - DEMO time 
+					 <li><span class="warning">18h00</span> - Encerramento 
+				  </ul>
+			    </section>
+
+
+				<section>
+				  <h1>Equipe</h1>
+				  <div style="float: left; width: 50%;">
+					  <h2>GDG-SP:</h2>
+					  <ul>
+					  <li>Daniel Filho
+					  <li>Luís Leão
+					  <li>Paulo Fernandes
+					  </ul>
+ 					 </div>
+				  <div style="float: left; width: 50%;">
+				  <h2>Googlers:</h2>
+				  <ul>
+				  <li>Renato Mangini
+					<li>Lia Carrari
+					<li>Lício Fonseca
+					<li>Rodolpho Eckhardt
+					<li>Eduardo Cereto Carvalho
+					<li>Bruno Daniele
+					<li>Bernardo Barlach
+					<li>Edmilson Rodrigues
+					</ul>
+ 					 </div>
+ 					 <div style="clear: both;"></div>
+				</section>
+				
+				<section>
+				  <h1>Objetivos</h1>
+				  <h2 class="warning">Para nós:</h2>
+					<h3><span class="warning">Divulgar</span> e receber <span class="warning">feedback</span></h3>
+				  
+				</section>
+				
+			    <section>
+				  <h1>Objetivos</h1>
+				  <h2 class="warning">Para vocês:</h2>
+				  <ul>
+					<li><span class="warning">Aprender</span> sobre a plataforma
+					<li><span class="warning">Construir</span> uma app
+					<li><span class="warning">Mostrar</span> seus skillz
+					<li><span class="warning">Comer</span> pizza
+				  </ul>
+				</section>
+			
+				<section>
+		           <h1 class="warning">Uma nova plataforma para apps</h1>
+        </section>
+
+				<section>
+					<h1>Por quê?</h1>
+		            <h2>Apps deveriam:</h2>
+					<ul>
+						<li>funcionar <span class="warning">offline</a>
+						<li>parecer <span class="warning">nativo</a>
+						<li>conseguir <span class="warning">acessar </span> devices
+					</ul>
+					<br/><br/>
+					<h3>e ser feita com <span class="warning">tecnologias</span> que nós adoramos:</h3>
+						HTML, Javascript e CSS3
+		        </section>
+		
+				<section>
+	              <h2>Breve experimento</h2>
+	              <h3>50 apps de iOS e Android:</h3>
+	        <ul>
+		  <li>Instale a app
+		  <li>fique offline
+		  <li>execute a app
+		</ul>
+	            </section>
+		  
+		        	<section class="apps">
+				      <img src="images/app1.png">
+					  <img src="images/app2.png">
+					  <img src="images/app3.png">
+				   	  <img src="images/app4.png">
+					  <img src="images/app5.png">
+					  <img src="images/app6.png">
+					  <img src="images/app7.png">
+					  <img src="images/app8.png">
+					  <img src="images/app9.png">
+					</section>
+					
+						<section>
+			              <h2>Faça o mesmo com Web Apps</h2>
+			            </section>
+
+						<section>
+					      <img src="images/offlineweb.png">
+						</section>
+
+						<section>
+							<br><br>
+						<p> 
+						  <q>Vou adicionar suporte <span class="warning" style="font-weight: bold;">offline</span> na minha app</q> &mdash; Web Dev
+						</p>
+						<br><br><br><br>
+						<p>
+						  <q>Vou adicionar suporte <span class="warning" style="font-weight: bold;">online</span> na minha app</q> &mdash; App Dev
+						</p>
+						</section>
+
+		        <section>
+		           <h2><span class="warning">Chrome Apps</a></h2>
+		           <img src="images/native.png">
+		        </section>
+		
+				<section>
+		           <h2>Chrome Apps:</h2>
+		           <ul> 
+			         <li>Offline
+				     <li>Look and feel nativo
+					 	 <li>Hardware, full network, alarms, etc
+			      <li>E <span class="warning">mobile</span>!</li>
+			       </ul>
+			       <br><br>
+			       <h3>DEMO TIME</h3>
+		        </section>
+		
+		        
+				<section>
+			      <h1>Temos <span class="warning">prêmios!</span></h1>
+			      <ol>
+			      	<li>Nerf guns: <span class="warning">melhor app</span> presencial (Google-SP)</li>
+			      	<li>Bonecos bobble head: <span class="warning">melhor app</span> geral (todo mundo)</li>
+			      	<li>Brindes da Google Store: <span class="warning">segundo e terceiro lugares</span> presencial e geral</li>
+			      </ol>
+  				      <img style="z-index: -10; position: absolute; left: 0; width: 20%; bottom: 0; border: none; background: transparent; box-shadow: none;" src="images/bobblehead.png">
+						  <img style="z-index: -10; position: absolute; right: 30px; width: 40%; bottom: 0; border: none; background: transparent; box-shadow: none;"  src="images/nerfguns.png">
+
+			    </section>
+
+				<section>
+			      <h1>Para concorrer:</h1>
+				  <ol>
+					<li>Construa sua app!
+					<li>Publique-a na Chrome Web Store
+						<li>Envie os dados no form <a href="http://goo.gl/xX0KF">http://goo.gl/xX0KF</a>
+				  </ol>
+				  <br><br>
+				  <p>Prazo para envio: <span class="warning">Segunda-feira, 29/04, 23h59</span></p>
+			    </section>
+			
+				<section>
+			      <h1>Seja SOCIAL!</h1>
+			      <p>Twitter ou G+: <span class="warning">#ChromeAppsHack</span></p>
+			      <p>Evento no G+: fotos, comentários, apps</p>
+			    </section>
+				
+				<section>
+				  <h1 class="warning"></h1>
+				  <img src="images/shutup.jpg">
+				</section>
+
+				<section>
+				  <h1>E agora?</h1>
+				  <ul>
+				  	<li>Quick start guide: <a href="http://goo.gl/WDwEc">http://goo.gl/WDwEc</a>
+			      <li>Faça/converta uma app útil para sua empresa
+				    <li>Tente o code lab: <a href="http://goo.gl/p8YRm">http://goo.gl/p8YRm</a>
+				    <li>Use um dos samples <a href="http://goo.gl/mY1OC">http://goo.gl/mY1OC</a>
+				  </ul>
+				  <br><br>
+				  <p>Quer ajuda? Instale o CIRC: <a href="http://goo.gl/hhPmG">http://goo.gl/hhPmG</a></p>
+		      <pre>
+/nick seunome_semespaços
+/server irc.freenode.org
+/join #chromeappshackathon
+		      </pre>
+		      <p>Estes slides estão em <a href="http://goo.gl/zPz9t">http://goo.gl/zPz9t</a></p>
+				</section>
+
+				<section>
+					<h1 class="warning">Using Sublime?</h1>
+					<h2>Install the Chrome Apps Package</h2>
+					<ol>
+						<li>Install <a href="http://goo.gl/7IZhs">Sublime Package Control</a>
+						<li>Preferences -&gt; Package Control
+						<li>Install Package
+						<li>search for <strong>Chrome</strong>
+					</ol>
+				</section>
+
+			</div>
+		
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+		<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9988000-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+	</body>
+</html>

@@ -1,0 +1,583 @@
+<!--
+Google IO 2012 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahe <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="all" href="theme/css/io2013.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+<!-- <slide class="logoslide nobackground">
+  <article class="flexbox vcenter">
+    <span><img src="images/google_developers_logo.png"></span>
+  </article>
+</slide>
+ -->
+<slide class="title-slide segue nobackground">
+  <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+  <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+  <hgroup class="auto-fadein">
+    <h1 data-config-title><!-- populated from slide_config.json --></h1>
+    <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+    <p data-config-presenter><!-- populated from slide_config.json --></p>
+  </hgroup>
+</slide>
+
+
+<slide class="textonpanel nobackground fill notransition opaque-bg op0" style="background-image: url(images/braziljs/complex_road.jpg)">
+  
+    <hgroup>
+      <h2>Vida de programador front-end</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>HTML</li>
+<li>assets</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="textonpanel nobackground fill notransition opaque-bg op1" style="background-image: url(images/braziljs/complex_road.jpg)">
+  
+    <hgroup>
+      <h2>Vida de programador front-end</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>HTML</li>
+<li>assets</li>
+<li><strong>JS</strong></li>
+<li><strong>CSS</strong></li>
+</ul></article>
+ 
+</slide>
+
+<slide class="textonpanel nobackground fill notransition opaque-bg op2" style="background-image: url(images/braziljs/complex_road.jpg)">
+  
+    <hgroup>
+      <h2>Vida de programador front-end</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>HTML</li>
+<li>assets</li>
+<li>JS</li>
+<li><strong>SCSS-&gt;</strong>CSS</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="textonpanel nobackground fill notransition opaque-bg op3" style="background-image: url(images/braziljs/complex_road.jpg)">
+  
+    <hgroup>
+      <h2>Vida de programador front-end</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>HTML</li>
+<li>assets</li>
+<li><strong>CoffeeScript-&gt;</strong>JS</li>
+<li>SCSS-&gt;CSS</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="textonpanel nobackground fill notransition opaque-bg op4" style="background-image: url(images/braziljs/complex_road.jpg)">
+  
+    <hgroup>
+      <h2>Vida de programador front-end</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>HTML</li>
+<li>assets</li>
+<li><strong>libs e frameworks</strong></li>
+<li>CoffeeScript-&gt;JS</li>
+<li>SCSS-&gt;CSS</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="textonpanel nobackground fill notransition opaque-bg op5" style="background-image: url(images/braziljs/complex_road.jpg)">
+  
+    <hgroup>
+      <h2>Vida de programador front-end</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li><strong>I18N-&gt;</strong>HTML</li>
+<li>assets</li>
+<li>libs e frameworks</li>
+<li>CoffeeScript-&gt;JS</li>
+<li>SCSS-&gt;CSS</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="textonpanel nobackground fill notransition opaque-bg op6" style="background-image: url(images/braziljs/complex_road.jpg)">
+  
+    <hgroup>
+      <h2>Vida de programador front-end</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>I18N-&gt;HTML</li>
+<li>assets</li>
+<li>libs e frameworks</li>
+<li>CoffeeScript-&gt;JS<strong>-&gt;minification/obfuscation</strong></li>
+<li>SCSS-&gt;CSS<strong>-&gt;minification</strong></li>
+</ul></article>
+ 
+</slide>
+
+<slide class="textonpanel nobackground fill notransition opaque-bg op7" style="background-image: url(images/braziljs/complex_road.jpg)">
+  
+    <hgroup>
+      <h2>Vida de programador front-end</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>I18N-&gt;HTML</li>
+<li>assets<strong>: sprites</strong></li>
+<li>libs e frameworks</li>
+<li>CoffeeScript-&gt;JS-&gt;minification/obfuscation</li>
+<li>SCSS-&gt;CSS-&gt;minification</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="textonpanel nobackground fill notransition opaque-bg op8" style="background-image: url(images/braziljs/complex_road.jpg)">
+  
+    <hgroup>
+      <h2>Vida de programador front-end</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>I18N-&gt;HTML</li>
+<li>assets: sprites<strong>, image optim</strong></li>
+<li>libs e frameworks</li>
+<li>CoffeeScript-&gt;JS-&gt;minification/obfuscation</li>
+<li>SCSS-&gt;CSS-&gt;minification</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="textonpanel nobackground fill notransition opaque-bg op9" style="background-image: url(images/braziljs/complex_road.jpg)">
+  
+    <hgroup>
+      <h2>Vida de programador front-end</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>I18N-&gt;HTML</li>
+<li>assets: sprites, image optim</li>
+<li>libs e frameworks</li>
+<li>CoffeeScript-&gt;JS-&gt;minification/obfuscation</li>
+<li>SCSS-&gt;CSS-&gt;minification</li>
+<li><strong>build: teste, homologação, produção</strong></li>
+</ul></article>
+ 
+</slide>
+
+<slide class="textonpanel nobackground fill notransition opaque-bg op10" style="background-image: url(images/braziljs/complex_road.jpg)">
+  
+    <hgroup>
+      <h2>Vida de programador front-end</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>I18N-&gt;HTML</li>
+<li>assets: sprites, image optim</li>
+<li>libs e frameworks</li>
+<li>CoffeeScript-&gt;JS-&gt;minification/obfuscation</li>
+<li>SCSS-&gt;CSS-&gt;minification</li>
+<li><strong>testes unitários</strong></li>
+<li><strong>regressão em headless browser</strong></li>
+<li>build: teste, homologação, produção</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="textonpanel nobackground fill notransition opaque-bg op11" style="background-image: url(images/braziljs/complex_road.jpg)">
+  
+    <hgroup>
+      <h2>Vida de programador front-end</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>I18N-&gt;HTML</li>
+<li>assets: sprites, image optim</li>
+<li>libs e frameworks</li>
+<li>CoffeeScript-&gt;JS-&gt;minification/obfuscation</li>
+<li>SCSS-&gt;CSS-&gt;minification</li>
+<li>testes unitários</li>
+<li>regressão em headless browser</li>
+<li>build: teste, homologação, produção</li>
+<li><strong>deploy: teste, homologação, produção</strong></li>
+</ul></article>
+ 
+</slide>
+
+<slide class="textonpanel nobackground fill notransition opaque-bg op12" style="background-image: url(images/braziljs/complex_road.jpg)">
+  
+    <hgroup>
+      <h2>Vida de programador front-end</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>I18N-&gt;HTML</li>
+<li>assets: sprites, image optim</li>
+<li>libs e frameworks</li>
+<li>CoffeeScript-&gt;JS-&gt;minification/obfuscation</li>
+<li>SCSS-&gt;CSS-&gt;minification</li>
+<li>testes unitários</li>
+<li>regressão em headless browser</li>
+<li>build: teste, homologação, produção</li>
+<li><strong>versionamento</strong></li>
+<li>deploy: teste, homologação, produção</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="textonpanel nobackground fill notransition" style="background-image: url(images/braziljs/complex_road.jpg)">
+  
+    <hgroup>
+      <h2>Vida de programador front-end</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>I18N-&gt;HTML</li>
+<li>assets: sprites, image optim</li>
+<li>libs e frameworks</li>
+<li>CoffeeScript-&gt;JS-&gt;minification/obfuscation</li>
+<li>SCSS-&gt;CSS-&gt;minification</li>
+<li>testes unitários</li>
+<li>regressão em headless browser</li>
+<li>build: teste, homologação, produção</li>
+<li>versionamento</li>
+<li>deploy: teste, homologação, produção</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="nobackground fill" style="background-image: url(images/braziljs/complex_road.jpg)">
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ></article>
+ 
+</slide>
+
+<slide class="nobackground fill center-bg" style="background-image: url(images/braziljs/subway_map.jpg)">
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ></article>
+ 
+</slide>
+
+<slide class="textonpanel nobackground fill center-bg opaque-bg op5" style="background-image: url(images/braziljs/subway_map.jpg)">
+  
+    <hgroup>
+      <h2>Vida de programador front-end</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul class="build">
+<li><p style="text-decoration: line-through;"> I18N-&gt;HTML; assets: sprites, image optim; libs e frameworks; CoffeeScript-&gt;JS-&gt;minification/obfuscation; SCSS-&gt;CSS-&gt;minification; testes unitários; regressão em headless browser; build: teste, homologação, produção; versionamento; deploy: teste, homologação, produção!</p></li>
+<li><strong>grunt build</strong>, <strong>grunt test</strong>, ...</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="nobackground fill" style="background-image: url(images/braziljs/grunt.svg)">
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ><blockquote>GRUNT<br>The JavaScript Task Runner</blockquote></article>
+ 
+</slide>
+
+<slide class="fill textonpanel opaque-bg op4" style="background-image: url(images/braziljs/math_equation.jpg)">
+  
+    <hgroup>
+      <h2>Vida de programador front-end</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>Bootstrap 3.0 saiu, você precisa atualizar!</p>
+<ul class="build">
+<li>(fica sabendo pelo Twitter)</li>
+<li>Navega pro site do Bootstrap</li>
+<li>Faz download do zip</li>
+<li>Localiza CSSs e JavaScripts e copia para o seu projeto</li>
+<li>Descobre incompatibilidades</li>
+<li>Atualiza libs dependentes</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="fill textonpanel opaque-bg op4" style="background-image: url(images/braziljs/math_equation.jpg)">
+  
+    <hgroup>
+      <h2>Vida de programador front-end</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul class="build">
+<li>
+<p><p style="text-decoration: line-through;"> (fica sabendo pelo Twitter); Navega pro site do Bootstrap; Faz download do zip; Localiza CSSs e JavaScripts e copia para o seu projeto; Descobre incompatibilidades; Atualiza libs dependentes</p></p>
+</li>
+<li>
+<p><strong>bower update bootstrap</strong></p>
+</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="nobackground fill" style="background-image: url(images/braziljs/bower.svg)">
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ><blockquote>BOWER<br>Package manager for the web</blockquote></article>
+ 
+</slide>
+
+<slide class="textonpanel nobackground fill opaque-bg op5" style="background-image: url(images/braziljs/roadsigns.jpg)">
+  
+    <hgroup>
+      <h2>Vida de programador front-end</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>Mês seguinte, projeto novo:</p>
+<ul class="build">
+<li>copy and paste do projeto antigo, muda HTMLs, JSs, CSSs, assets</li>
+<li>reza um terço</li>
+<li>executa grunt build
+<ul style="font-size: 14px !important">
+    <li>I18N-&gt;HTML
+    <li> assets: sprites, image optim
+    <li> libs e frameworks
+    <li> CoffeeScript-&gt;JS-&gt;minification/obfuscation
+    <li> SCSS-&gt;CSS-&gt;minification
+    <li> testes unitários
+    <li> regressão em headless browser
+    <li> build: teste, homologação, produção
+    <li> versionamento
+    <li> deploy: teste, homologação, produção
+</ul></li>
+</ul></article>
+ 
+</slide>
+
+<slide class="nobackground fill opaque-bg op7" style="background-image: url(images/braziljs/roadsigns.jpg)">
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ><blockquote style="margin-top: 10px; font-size: 36px">
+<strong>Technical debt:</strong> "an obligation incurred when you choose a design or construction approach that's expedient in the short term but that increases complexity and is more costly in the long term."
+<cite>Ward Cunningham</cite>
+</blockquote></article>
+ 
+</slide>
+
+<slide class="textonpanel nobackground fill opaque-bg op5" style="background-image: url(images/braziljs/roadsigns.jpg)">
+  
+    <hgroup>
+      <h2>Vida de programador front-end</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>Mês seguinte, projeto novo:</p>
+<ul class="build">
+<li><p style="text-decoration: line-through;">copy and paste do projeto antigo, muda HTMLs, JSs, CSSs, assets; reza um terço; executa grunt build, ...</p></li>
+<li><strong>yo webapp</strong></li>
+<li><strong>yo mycompany-webapp</strong></li>
+</ul></article>
+ 
+</slide>
+
+<slide class="nobackground fill" style="background-image: url(images/braziljs/yeoman.svg)">
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ><blockquote>YEOMAN. Modern workflows for modern webapps</blockquote></article>
+ 
+</slide>
+
+<slide class="big side-img" >
+  
+    <hgroup>
+      <h2>Yeoman</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><img alt="" src="images/braziljs/super_dog.jpg" /></p>
+<ul class="build">
+<li>Automatiza a criação de apps</li>
+<li>Configura dependências</li>
+<li>Configura workflows</li>
+<li>Fieis parceiros: Bower e Grunt <img style="position: absolute; top: 180px; max-width: 40%" src="images/braziljs/animal_heroes.png"></li>
+</ul></article>
+ 
+</slide>
+
+<slide class="big side-img" >
+  
+    <hgroup>
+      <h2>Yeoman</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><img alt="" src="images/braziljs/super_dog.jpg" /></p>
+<ul class="build">
+<li>
+<p>Generators:
+<pre class="prettyprint" data-lang="shell">
+npm search yeoman-generator
+npm install generator-NAME
+yo NAME
+</pre></p>
+</li>
+<li>
+<p>Criar um novo:
+<pre class="prettyprint" data-lang="shell">
+npm install generator-generator
+yo generator
+...
+</pre></p>
+</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="vcenter flexbox"><p><img alt="" src="images/braziljs/yeoman_workflow.jpg" /></p></article>
+ 
+</slide>
+
+<slide class="nobackground fill center-bg" style="background-image: url(images/braziljs/elvys_fever.jpg)">
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="vcenter flexbox"><blockquote>
+<div style="font-size: 12px; text-align: center;">(is this Paul Irish?)</div>
+criando uma webapp<br>
+<div style="text-align: center"><strong>yo webapp</strong></div>
+<div style="text-align: center; font-size: 30px"><strong>yo angular</strong></div>
+<div style="text-align: center; font-size: 30px"><strong>yo angular:view</strong></div>
+</blockquote></article>
+ 
+</slide>
+
+<slide class="nobackground fill center-bg" style="background-image: url(images/braziljs/elvys_fever.jpg)">
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="vcenter flexbox"><blockquote>
+<div style="font-size: 12px; text-align: center;">(of course not! Paul Irish would never dance like this... would him?)</div>
+deploy no Heroku<br>
+<div style="text-align: center"><strong>yo heroku</strong></div>
+</blockquote></article>
+ 
+</slide>
+
+<slide class="nobackground fill center-bg" style="background-image: url(images/braziljs/tools.jpg)">
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="vcenter flexbox"><blockquote>
+criando generators<br>
+<div style="text-align: center"><strong>yo generator</strong></div>
+</blockquote></article>
+ 
+</slide>
+
+<slide class="nobackground fill opaque-bg op4" style="background-image: url(images/braziljs/yeoman.svg)">
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ><blockquote>Roadmap:<br><div style="font-size: 36px">participante especial, <strong>Addy Osmani</strong></div></blockquote></article>
+ 
+</slide>
+
+
+<slide class="thank-you-slide segue nobackground">
+  <aside class="gdbar right"><img src="images/google_developers_icon_128.png"></aside>
+  <article class="flexbox vleft auto-fadein">
+    <h2>&lt;Thank You!&gt;</h2>
+    <p class="disclaimer">
+      Proudly created and presented in a Chromebook Pixel. No (feline) animals were harmed in the making of this preso.</p>
+  </article>
+  <p class="auto-fadein" data-config-contact>
+    <!-- populated from slide_config.json -->
+  </p>
+</slide>
+
+<!-- <slide class="logoslide dark nobackground">
+  <article class="flexbox vcenter">
+    <span><img src="images/google_developers_logo_white.png"></span>
+  </article>
+</slide> -->
+
+<slide class="backdrop"></slide>
+
+</slides>
+
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-24426061-2']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>
