@@ -2,7 +2,7 @@ var SLIDE_CONFIG = {
   // Slide settings
   settings: {
     title: 'Chrome Packaged Apps',
-    subtitle: 'A deep dive into Chrome Packaged Apps',
+    subtitle: 'Criando sua primeira aplicação Google Chrome',
     useBuilds: true, // Default: true. False will turn off slide animation builds.
     usePrettify: true, // Default: true
     enableSlideAreas: true, // Default: true. False turns off the click areas on either slide of the slides.
@@ -18,11 +18,11 @@ var SLIDE_CONFIG = {
 
   // Author information
   presenters: [{
-    name: 'Renato Mangini',
-    company: 'Chrome team<br>Google',
-    gplus: 'http://google.com/+renatomangini',
-    twitter: '@renatomangini',
-    github: 'http://github.com/mangini'
+    name: 'Breno Araújo',
+    company: 'Spread Systems/Faculdade Cenecista<br>Google Developer Group Leader',
+    gplus: 'http://google.com/+brenopuc',
+    twitter: '@brenosaraujo',
+    github: 'http://github.com/braraujo'
   }/*, {
     name: 'Second Name',
     company: 'Job Title, Google',

@@ -2,19 +2,19 @@
 title: Agenda
 build_lists: true
 
-- About the platform
-- Develop
-- Debug/test
-- Publish
+- Sobre a Plataforma
+- Desenvolvimento
+- Debug/Teste
+- Publicação
 
 ---
 
-title: About the platform
+title: Sobre a Plataforma
 class: segue dark nobackground
 
 ---
 
-title: What it is and what it is not
+title: O que é /O que não é
 build_lists: true
 
 - It is a platform for building:
