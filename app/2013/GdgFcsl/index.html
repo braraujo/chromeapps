@@ -72,20 +72,20 @@ URL: https://code.google.com/p/io-2012-slides
 <slide  >
   
     <hgroup>
-      <h2>O que é /O que não é</h2>
+      <h2>O que é & O que não é</h2>
       <h3></h3>
     </hgroup>
     <article ><ul class="build">
-<li>It is a platform for building:<ul class="build">
-<li>installable apps, using JavaScript/HTML/CSS</li>
-<li>installable via Chrome Web Store</li>
-<li>with powerful features that are not allowed in the open web</li>
+<li>É uma plataforma para construção:<ul class="build">
+<li>Aplicativos instaláveis, utilizando JavaScript/HTML/CSS</li>
+<li>Instalável via Chrome Web Store</li>
+<li>com funcionalidade poderosas não permitidas em aplicativos web tradicionais</li>
 </ul>
 </li>
-<li>It is <strong>NOT</strong>:<ul class="build">
-<li>apps that run inside a browser tab</li>
-<li>apps that access browser "secrets" (cookies, storage, etc)</li>
-<li>native executable apps (exe, dmg, etc)</li>
+<li><strong>Não</strong> é:<ul class="build">
+<li>aplicativos que executam em uma aba do browser</li>
+<li>Aplicativos que acessam informações "sensíveis" (cookies, storage, etc)</li>
+<li>Executáveis nativos (exe, dmg, etc)</li>
 </ul>
 </li>
 </ul></article>
@@ -95,18 +95,18 @@ URL: https://code.google.com/p/io-2012-slides
 <slide  >
   
     <hgroup>
-      <h2>What do you need to:</h2>
+      <h2>O que precisamos para começar ?</h2>
       <h3></h3>
     </hgroup>
     <article ><ul class="build">
-<li>Develop:<ul class="build">
-<li>Any code editor</li>
-<li>Chrome browser to test</li>
+<li>Desenvolver:<ul class="build">
+<li>Qualquer editor de código (Notepad++, Sublime, etc...)</li>
+<li>Navegador Google Chrome para testar</li>
 </ul>
 </li>
-<li>Publish:<ul class="build">
-<li>Developer account in Chrome Web Store<ul class="build">
-<li>Pay a lifetime fee of $5</li>
+<li>Publicar:<ul class="build">
+<li>Uma conta de desenvolvedor na Chrome Web Store<ul class="build">
+<li>Pagar uma taxa única de $5</li>
 </ul>
 </li>
 </ul>
@@ -118,14 +118,14 @@ URL: https://code.google.com/p/io-2012-slides
 <slide  >
   
     <hgroup>
-      <h2>Why JavaScript?</h2>
+      <h2>Por quê JavaScript?</h2>
       <h3></h3>
     </hgroup>
     <article ><ul class="build">
-<li>well supported</li>
-<li>lots of qualified developers</li>
-<li>evolves quickly</li>
-<li>is not owned by anyone and it is owned by everyone</li>
+<li>amplamente suportado</li>
+<li>grande quantidade de profissionais habilitados</li>
+<li>desenvolvimento rápido</li>
+<li>não pertence a ninguém e pertence à todo mundo</li>
 </ul></article>
  
 </slide>
@@ -133,22 +133,22 @@ URL: https://code.google.com/p/io-2012-slides
 <slide  >
   
     <hgroup>
-      <h2>But...</h2>
+      <h2>Masssss...</h2>
       <h3></h3>
     </hgroup>
     <article ><ul class="build">
-<li>my code has secrets, JS is not compiled<ul class="build">
+<li>meu código possui algoritmos que não quero compartilhar, JS não é compilado<ul class="build">
 <li>obfuscate JS</li>
-<li>run sensitive code in your server</li>
-<li><a href="http://en.wikipedia.org/wiki/Security_through_obscurity">Security through Obscurity</a> <strong>is BAD</strong><ul class="build">
+<li>execute códigos que necessitam de segurança no servidor</li>
+<li><a href="http://en.wikipedia.org/wiki/Security_through_obscurity">Segurança via Obfuscação </a> <strong>é RUIM</strong><ul class="build">
 <li>"Open design: System security should not depend on the secrecy of the implementation or its components" (NIST)</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>if I have my API in JSON, anyone could access it<ul class="build">
-<li>use auth</li>
-<li>even better: <a href="images/qconsp/oauth.gif">use OAuth 2.0</a></li>
+<li>Se minha API está estruturada com JSON qualquer um poderá acessar<ul class="build">
+<li>use autenticação</li>
+<li>ainda melhor: <a href="images/qconsp/oauth.gif">use OAuth 2.0</a></li>
 </ul>
 </li>
 </ul></article>
@@ -158,48 +158,22 @@ URL: https://code.google.com/p/io-2012-slides
 <slide  >
   
     <hgroup>
-      <h2>But...</h2>
+      <h2>Masssss...</h2>
       <h3></h3>
     </hgroup>
     <article ><ul class="build">
-<li>JS is messy, hard to maintain<ul class="build">
-<li>use <a href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/">patterns</a></li>
-<li>use modules and <a href="http://requirejs.org/">RequireJS</a></li>
-<li>use an MV* framework, like <a href="http://angularjs.org/">AngularJS</a></li>
+<li>JS é uma bagunça, muito difícil de se manter<ul class="build">
+<li>use <a href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/">padrões</a></li>
+<li>use módulos e <a href="http://requirejs.org/">RequireJS</a></li>
+<li>use algum framework MV*, por exemplo <a href="http://angularjs.org/">AngularJS</a></li>
 </ul>
 </li>
-<li>I want apps that only my company can install<ul class="build">
-<li>CWS allows publishing only to a domain</li>
+<li>Meus aplicativos devem ser instalados apenas pela minha empresa<ul class="build">
+<li>CWS permite publicação apenas para um determinado domínio</li>
 </ul>
 </li>
-<li>My users might not have Chrome installed<ul class="build">
-<li>apps are/will be installable from other browsers</li>
-</ul>
-</li>
-</ul></article>
- 
-</slide>
-
-<slide  >
-  
-    <hgroup>
-      <h2>Compared to native</h2>
-      <h3></h3>
-    </hgroup>
-    <article ><ul class="build">
-<li>
-<p>Pros:</p>
-<ul class="build">
-<li>Safe (runs in a sandbox)</li>
-<li>Web technologies</li>
-<li>Low barrier to install</li>
-<li>Problems "solved": distribution, installation, multi-platform support, paid app download, in-app payments</li>
-</ul>
-</li>
-<li>
-<p>Cons:</p>
-<ul class="build">
-<li>only native features supported by chrome.* APIs</li>
+<li>Meus usuários podem não ter o Chrome instalado<ul class="build">
+<li>apps serão instaláveis em outros navegadores</li>
 </ul>
 </li>
 </ul></article>
@@ -209,25 +183,51 @@ URL: https://code.google.com/p/io-2012-slides
 <slide  >
   
     <hgroup>
-      <h2>Compared to the web</h2>
+      <h2>Chrome App vs. Aplicação nativa</h2>
       <h3></h3>
     </hgroup>
     <article ><ul class="build">
 <li>
 <p>Pros:</p>
 <ul class="build">
-<li>easy to run offline</li>
-<li>run out of the browser</li>
-<li>powerful features, hardware access, filesystem, full network, etc</li>
-<li>no need to support multi-platform quirks</li>
+<li>Segurança (executa em uma caixa de areia - sandbox)</li>
+<li>Utiliza tecnologias web</li>
+<li>Fácil instalação</li>
+<li>Problemas "resolvidos": distribuição, instalação, multi-plataforma, monetização, monetização interna</li>
 </ul>
 </li>
 <li>
-<p>Cons:</p>
+<p>Contras:</p>
 <ul class="build">
-<li>Updating means pushing a new version to CWS</li>
-<li>full CSP restrictions</li>
-<li>no LocalStorage support</li>
+<li>recursos nativos são permitidos apenas via APIs chrome.*</li>
+</ul>
+</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Chrome Apps vs. Sites WEB</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul class="build">
+<li>
+<p>Pros:</p>
+<ul class="build">
+<li>executa de forma offline</li>
+<li>roda fora do browser</li>
+<li>Acesso a alguns recursos nativos como rede, sistema de arquivos, usb, etc...</li>
+<li>não se preocupa com detalhes que mudam de plataforma para plataforma</li>
+</ul>
+</li>
+<li>
+<p>Contras:</p>
+<ul class="build">
+<li>Atualizações feitas através de nova versão no CWS</li>
+<li>Restrições definidas pelas políticas CSP (Content Security Policy)</li>
+<li>no LocalStorage (HTML5) support</li>
 </ul>
 </li>
 </ul></article>
@@ -241,9 +241,8 @@ URL: https://code.google.com/p/io-2012-slides
       <h3></h3>
     </hgroup>
     <article ><ul class="build">
-<li>No dynamic code generation: eval(), new Function()</li>
-<li>No inline JavaScript: always use *.js files</li>
-<li>No remote resources: package all resources in app or use AJAX+dataURLs</li>
+<li>Não permite geração dinâmica de código: eval(), new Function()</li>
+<li>Não permite códigos JavaScript em linha: sempre utilizar arquivos *.js</li>
 </ul></article>
  
 </slide>
@@ -251,7 +250,7 @@ URL: https://code.google.com/p/io-2012-slides
 <slide  >
   
     <hgroup>
-      <h2>For the web dev</h2>
+      <h2>Acelerando Desenvolvimento</h2>
       <h3></h3>
     </hgroup>
     <article ><ul class="build">
@@ -259,31 +258,13 @@ URL: https://code.google.com/p/io-2012-slides
 <p>Frameworks:</p>
 <ul class="build">
 <li><span class="green">OK</span>: JQuery, pureCSS, Bootstrap, AngularJS, Underscore, Backbone</li>
-<li><span class="red">NEED ATTENTION</span>: dynamic code generation (Handlebar, <a href="https://github.com/addyosmani/mustache-for-chromeapps#what-alternatives-are-available-that-work-with-chrome-apps">Mustache</a>)</li>
+<li><span class="red">ATENÇÃO</span>: geração de código dinâmica (Handlebar, <a href="https://github.com/addyosmani/mustache-for-chromeapps#what-alternatives-are-available-that-work-with-chrome-apps">Mustache</a>)</li>
 </ul>
 </li>
 <li>
-<p>running non-compliant code?</p>
+<p>precisa executar código não compatível?</p>
 <ul class="build">
-<li>webview or sandboxed iframe</li>
-</ul>
-</li>
-</ul></article>
- 
-</slide>
-
-<slide  >
-  
-    <hgroup>
-      <h2>Quizz</h2>
-      <h3>10 minutes activity</h3>
-    </hgroup>
-    <article ><ul>
-<li>Imagine you are converting your app</li>
-<li>Raise the potential difficulties<ul>
-<li>Frameworks using CSP</li>
-<li>LocalStorage</li>
-<li>Server-side templating</li>
+<li>utilize webview ou sandboxed iframe</li>
 </ul>
 </li>
 </ul></article>
@@ -294,8 +275,8 @@ URL: https://code.google.com/p/io-2012-slides
   
     <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
     <hgroup class="auto-fadein">
-      <h2>Questions?</h2>
-      <h3>about the platform</h3>
+      <h2>Perguntas?</h2>
+      <h3></h3>
     </hgroup>
   
 </slide>
@@ -304,7 +285,7 @@ URL: https://code.google.com/p/io-2012-slides
   
     <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
     <hgroup class="auto-fadein">
-      <h2>Develop</h2>
+      <h2>Desenvolvendo</h2>
       <h3></h3>
     </hgroup>
   
@@ -313,23 +294,23 @@ URL: https://code.google.com/p/io-2012-slides
 <slide  >
   
     <hgroup>
-      <h2>Getting started</h2>
+      <h2>Primeiros Passos</h2>
       <h3></h3>
     </hgroup>
     <article ><ul>
 <li>
-<p>Start your app</p>
+<p>Crie sua aplicação</p>
 <ul>
 <li>Yeoman generator (<a href="https://github.com/yeoman/generator-chromeapp#readme">link</a>)</li>
 <li>Sublime plugin (<a href="https://sublime.wbond.net/packages/Chrome%20Apps%20and%20Extensions">link</a>)</li>
-<li>Official samples at GitHub (<a href="https://github.com/GoogleChrome/chrome-app-samples">link</a>)</li>
+<li>Exemplos oficiais no GitHub (<a href="https://github.com/GoogleChrome/chrome-app-samples">link</a>)</li>
 </ul>
 </li>
 <li>
 <p><code>chrome://extensions</code></p>
 <ul>
-<li>Enable Developer Mode</li>
-<li>Open Apps Developer Tool</li>
+<li>Ative o modo desenvolvedor</li>
+<li>Abra o painel de ferramentas do desenvolvedor</li>
 <li>Load unpacked...</li>
 </ul>
 </li>
@@ -340,13 +321,13 @@ URL: https://code.google.com/p/io-2012-slides
 <slide  >
   
     <hgroup>
-      <h2>Structure of an app</h2>
+      <h2>Estrutura de um aplicativo</h2>
       <h3></h3>
     </hgroup>
     <article ><ul>
-<li>[required] manifest.json (<a href="http://developer.chrome.com/apps/manifest.html">syntax</a>, <a href="https://github.com/GoogleChrome/chrome-app-samples/blob/master/hello-world/manifest.json">sample</a>)</li>
-<li>[required] event page (<a href="http://developer.chrome.com/apps/app_lifecycle.html#eventpage">description</a>, <a href="https://github.com/GoogleChrome/chrome-app-samples/blob/master/hello-world/main.js">sample</a>)</li>
-<li>your app (html, css, js, fonts, images, ...)</li>
+<li>[required] manifest.json (<a href="http://developer.chrome.com/apps/manifest.html">sintaxe</a>, <a href="https://github.com/GoogleChrome/chrome-app-samples/blob/master/hello-world/manifest.json">exemplo</a>)</li>
+<li>[required] event page (<a href="http://developer.chrome.com/apps/app_lifecycle.html#eventpage">descrição</a>, <a href="https://github.com/GoogleChrome/chrome-app-samples/blob/master/hello-world/main.js">exemplo</a>)</li>
+<li>sua aplicação (html, css, js, fonts, images, ...)</li>
 </ul></article>
  
 </slide>
@@ -354,12 +335,12 @@ URL: https://code.google.com/p/io-2012-slides
 <slide  >
   
     <hgroup>
-      <h2>chrome.* APIs</h2>
+      <h2>APIs chrome.*</h2>
       <h3></h3>
     </hgroup>
     <article ><ul>
 <li><a href="http://chromeappsnow.com/search.html">API search</a></li>
-<li><a href="http://developer.chrome.com/apps/api_index.html">Official docs</a></li>
+<li><a href="http://developer.chrome.com/apps/api_index.html">Documentação oficial</a></li>
 </ul></article>
  
 </slide>
@@ -367,10 +348,10 @@ URL: https://code.google.com/p/io-2012-slides
 <slide  >
   
     <hgroup>
-      <h2>Managing windows</h2>
+      <h2>Gerenciando janelas</h2>
       <h3></h3>
     </hgroup>
-    <article ><p>chrome.app.window <a href="http://www.chromeappsnow.com/search.html?q=chrome.app.window&amp;t=a">quick API</a>, <a href="http://developer.chrome.com/apps/app_window.html">official doc</a></p>
+    <article ><p>chrome.app.window <a href="http://www.chromeappsnow.com/search.html?q=chrome.app.window&amp;t=a">API</a>, <a href="http://developer.chrome.com/apps/app_window.html">docs</a></p>
 <ul>
 <li>methods: .create, .current</li>
 <li>Object: <a href="http://developer.chrome.com/apps/app_window.html#type-AppWindow">AppWindow</a></li>
@@ -382,30 +363,30 @@ URL: https://code.google.com/p/io-2012-slides
 <slide  >
   
     <hgroup>
-      <h2>Storage</h2>
+      <h2>Armazenamento</h2>
       <h3></h3>
     </hgroup>
-    <article ><p>Many options:</p>
+    <article ><p>Várias opções:</p>
 <ul>
 <li>
-<p>structured data:</p>
+<p>dados estruturados:</p>
 <ul>
 <li>IndexedDB: just like in the web</li>
 </ul>
 </li>
 <li>
-<p>Key/value map:</p>
+<p>mapa chave/valor:</p>
 <ul>
-<li>chrome.storage.local: asynchronous version of LocalStorage</li>
-<li>chrome.storage.sync: cloud-synced version of chrome.storage.local</li>
+<li>chrome.storage.local: Versão assíncrona do LocalStorage</li>
+<li>chrome.storage.sync: Versão sincronizada com cloud-sync do chrome.storage.local</li>
 </ul>
 </li>
 <li>
-<p>Filesystem:</p>
+<p>Sistema de arquivos:</p>
 <ul>
-<li>HTML5 sandboxed FileSystem: just like in the web</li>
-<li>Extended HTML5 FileSystem: to access real files</li>
-<li>syncFileSystem: cloud-synced filesystem, backed by Google Drive</li>
+<li>HTML5 FileSystem: exatamente como em aplicativos WEB</li>
+<li>HTML5 FileSystem Extendido: para acessar arquivos reais</li>
+<li>syncFileSystem: arquivos sincronizados com cloud, baseado no Google Drive</li>
 </ul>
 </li>
 </ul></article>
@@ -415,14 +396,14 @@ URL: https://code.google.com/p/io-2012-slides
 <slide  >
   
     <hgroup>
-      <h2>Storage</h2>
+      <h2>Armazenamento</h2>
       <h3>chrome.storage.local/sync</h3>
     </hgroup>
-    <article ><p>chrome.storage.local/sync <a href="http://developer.chrome.com/apps/app_storage.html">official doc</a></p>
+    <article ><p>chrome.storage.local/sync <a href="http://developer.chrome.com/apps/app_storage.html">docs</a></p>
 <ul>
-<li>methods: get, set, remove, clear, getBytesInUse</li>
-<li>events: onChanged</li>
-<li>Samples: hello-world-sync</li>
+<li>métodos: get, set, remove, clear, getBytesInUse</li>
+<li>eventos: onChanged</li>
+<li>exemplos: hello-world-sync</li>
 </ul></article>
  
 </slide>
@@ -430,13 +411,13 @@ URL: https://code.google.com/p/io-2012-slides
 <slide  >
   
     <hgroup>
-      <h2>Storage</h2>
-      <h3>Extended HTML5 FileSystem</h3>
+      <h2>Armazenamento</h2>
+      <h3>HTML5 FileSystem Extendido</h3>
     </hgroup>
-    <article ><p>chrome.fileSystem <a href="http://developer.chrome.com/apps/fileSystem.html">official doc</a></p>
+    <article ><p>chrome.fileSystem <a href="http://developer.chrome.com/apps/fileSystem.html">docs</a></p>
 <ul>
-<li>methods: chooseEntry, retainEntry, restoreEntry</li>
-<li>Samples: filesystem-access</li>
+<li>métodos: chooseEntry, retainEntry, restoreEntry</li>
+<li>exemplos: filesystem-access</li>
 </ul></article>
  
 </slide>
@@ -444,13 +425,13 @@ URL: https://code.google.com/p/io-2012-slides
 <slide  >
   
     <hgroup>
-      <h2>Storage</h2>
+      <h2>Armazenamento</h2>
       <h3>syncFileSystem</h3>
     </hgroup>
-    <article ><p>chrome.syncFileSystem <a href="http://developer.chrome.com/apps/syncFileSystem.html">official doc</a></p>
+    <article ><p>chrome.syncFileSystem <a href="http://developer.chrome.com/apps/syncFileSystem.html">docs</a></p>
 <ul>
-<li>methods: requestFileSystem, getUsageAndQuota, getFileStatus</li>
-<li>Samples: syncfs-editor</li>
+<li>métodos: requestFileSystem, getUsageAndQuota, getFileStatus</li>
+<li>exemplos: syncfs-editor</li>
 </ul></article>
  
 </slide>
@@ -458,23 +439,23 @@ URL: https://code.google.com/p/io-2012-slides
 <slide  >
   
     <hgroup>
-      <h2>Network</h2>
-      <h3>Many options</h3>
+      <h2>Rede</h2>
+      <h3>várias opções</h3>
     </hgroup>
     <article ><ul>
 <li>
-<p>requesting data (network client):</p>
+<p>requisitando dados (lado cliente):</p>
 <ul>
-<li>XHR cross domain: just like in the web, but cross domain</li>
-<li>WebSockets: just like in the web</li>
-<li>chrome.socket: TCP and UDP raw client sockets</li>
+<li>XHR (XMLHttpRequest) cross domain: exatamente como na web tradicional, mas cross domain</li>
+<li>WebSockets: exatamente como nas aplicações tradicionais</li>
+<li>chrome.socket: Sockets TCP e UDP</li>
 </ul>
 </li>
 <li>
-<p>receiving data (network server):</p>
+<p>recebendo dados (lado servidor):</p>
 <ul>
-<li>chrome.pushMessaging: Google Cloud Messaging (works when app is not running)</li>
-<li>chrome.socket: TCP and UDP raw server sockets</li>
+<li>chrome.pushMessaging: Google Cloud Messaging - GCM (entrega a mensagem mesmo se o aplicativo não estiver aberto)</li>
+<li>chrome.socket: Sockets TCP e UDP</li>
 </ul>
 </li>
 </ul></article>
@@ -484,17 +465,17 @@ URL: https://code.google.com/p/io-2012-slides
 <slide  >
   
     <hgroup>
-      <h2>Network</h2>
+      <h2>Rede</h2>
       <h3>chrome.socket</h3>
     </hgroup>
-    <article ><p>chrome.socket <a href="http://developer.chrome.com/apps/socket.html">official doc</a></p>
+    <article ><p>chrome.socket <a href="http://developer.chrome.com/apps/socket.html">docs</a></p>
 <ul>
-<li>generic methods: getNetworkList</li>
-<li>methods for TCP client: create, connect, disconnect, read, write</li>
-<li>methods for TCP server: create, listen, accept, read, write, disconnect</li>
-<li>methods for UDP client: create, connect, sendTo</li>
-<li>methods for UDP server: create, connect, bind, recvFrom</li>
-<li>Samples: tcpserver, webserver, telnet</li>
+<li>métodos genéricos: getNetworkList</li>
+<li>métodos TCP client: create, connect, disconnect, read, write</li>
+<li>métodos TCP server: create, listen, accept, read, write, disconnect</li>
+<li>métodos UDP client: create, connect, sendTo</li>
+<li>métodos UDP server: create, connect, bind, recvFrom</li>
+<li>Exemplos: tcpserver, webserver, telnet</li>
 </ul></article>
  
 </slide>
@@ -502,14 +483,14 @@ URL: https://code.google.com/p/io-2012-slides
 <slide  >
   
     <hgroup>
-      <h2>Network</h2>
+      <h2>Rede</h2>
       <h3>chrome.pushMessaging</h3>
     </hgroup>
-    <article ><p>chrome.pushMessaging <a href="http://developer.chrome.com/apps/pushMessaging.html">official doc</a></p>
+    <article ><p>chrome.pushMessaging <a href="http://developer.chrome.com/apps/pushMessaging.html">docs</a></p>
 <ul>
-<li>methods: getChannelId</li>
-<li>events: onMessage</li>
-<li>Samples: push-sample-app</li>
+<li>métodos: getChannelId</li>
+<li>eventos: onMessage</li>
+<li>exemplos: push-sample-app</li>
 </ul></article>
  
 </slide>
@@ -522,8 +503,8 @@ URL: https://code.google.com/p/io-2012-slides
     </hgroup>
     <article ><p>chrome.identity <a href="http://developer.chrome.com/apps/identity.html">official doc</a></p>
 <ul>
-<li>methods: getAuthToken, launchWebAuthFlow</li>
-<li>Samples: identity, github-auth</li>
+<li>métodos: getAuthToken, launchWebAuthFlow</li>
+<li>exemplos: identity, github-auth</li>
 </ul></article>
  
 </slide>
@@ -531,20 +512,20 @@ URL: https://code.google.com/p/io-2012-slides
 <slide  >
   
     <hgroup>
-      <h2>Messaging</h2>
+      <h2>Mensageria</h2>
       <h3></h3>
     </hgroup>
     <article ><ul>
-<li>to/from another app or extension:<ul>
-<li>chrome.runtime.sendMessage <a href="http://developer.chrome.com/apps/runtime.html#method-sendMessage">official doc</a></li>
-<li>chrome.runtime.onMessageExternal <a href="http://developer.chrome.com/apps/runtime.html#event-onMessageExternal">official doc</a></li>
+<li>de/para another app or extension:<ul>
+<li>chrome.runtime.sendMessage <a href="http://developer.chrome.com/apps/runtime.html#method-sendMessage">docs</a></li>
+<li>chrome.runtime.onMessageExternal <a href="http://developer.chrome.com/apps/runtime.html#event-onMessageExternal">docs</a></li>
 </ul>
 </li>
-<li>from a web page:<ul>
-<li>chrome.runtime.sendMessage from webpages <a href="http://developer.chrome.com/apps/messaging.html#external-webpage">official doc</a></li>
+<li>de uma página web:<ul>
+<li>chrome.runtime.sendMessage de webpages <a href="http://developer.chrome.com/apps/messaging.html#external-webpage">docs</a></li>
 </ul>
 </li>
-<li>Samples: messaging</li>
+<li>exemplos: messaging</li>
 </ul></article>
  
 </slide>
@@ -555,11 +536,11 @@ URL: https://code.google.com/p/io-2012-slides
       <h2>Rich notifications</h2>
       <h3>chrome.notifications</h3>
     </hgroup>
-    <article ><p>chrome.notifications <a href="http://developer.chrome.com/apps/notifications.html">official doc</a></p>
+    <article ><p>chrome.notifications <a href="http://developer.chrome.com/apps/notifications.html">docs</a></p>
 <ul>
-<li>methods: create, clear</li>
-<li>events: onClicked, onClosed, onButtonClicked</li>
-<li>Sample: rich-notifications</li>
+<li>métodos: create, clear</li>
+<li>eventos: onClicked, onClosed, onButtonClicked</li>
+<li>exemplo: rich-notifications</li>
 </ul></article>
  
 </slide>
@@ -567,14 +548,14 @@ URL: https://code.google.com/p/io-2012-slides
 <slide  >
   
     <hgroup>
-      <h2>Alarms</h2>
+      <h2>Alarmes</h2>
       <h3>chrome.alarms</h3>
     </hgroup>
-    <article ><p>chrome.alarms <a href="http://developer.chrome.com/apps/alarms.html">official doc</a></p>
+    <article ><p>chrome.alarms <a href="http://developer.chrome.com/apps/alarms.html">docs</a></p>
 <ul>
-<li>methods: create, get, getAll, clear, clearAll</li>
-<li>events: onAlarm</li>
-<li>Sample: <a href="http://goo.gl/UHCS8">Google I/O codelab</a></li>
+<li>métodos: create, get, getAll, clear, clearAll</li>
+<li>eventos: onAlarm</li>
+<li>exemplo: <a href="http://goo.gl/UHCS8">Google I/O codelab</a></li>
 </ul></article>
  
 </slide>
@@ -589,7 +570,7 @@ URL: https://code.google.com/p/io-2012-slides
 <li>USB</li>
 <li>Bluetooth</li>
 <li>Serial</li>
-<li>Samples: usb-label-printer, adkjs</li>
+<li>exemplos: usb-label-printer, adkjs,arcaduino,freeway</li>
 </ul></article>
  
 </slide>
@@ -597,7 +578,7 @@ URL: https://code.google.com/p/io-2012-slides
 <slide  >
   
     <hgroup>
-      <h2>Embedding web content</h2>
+      <h2>Adicionando conteúdo web</h2>
       <h3></h3>
     </hgroup>
     <article ><ul class="build">
@@ -610,16 +591,16 @@ URL: https://code.google.com/p/io-2012-slides
 <slide  >
   
     <hgroup>
-      <h2>Embedding web content</h2>
+      <h2>Adicionando conteúdo web</h2>
       <h3>Sandboxed iframe</h3>
     </hgroup>
     <article ><ul class="build">
-<li>Run "unsafe" packaged code</li>
-<li>Has no access to privileged APIs</li>
-<li>Send messages to it using <code>iframe.contentWindow.postMessage(message, targetOrigin)</code></li>
-<li>Receive messages in it using <code>window.addEventListener('message', handler)</code></li>
-<li>Send messages back to the embedder using <code>handler.source.postMessage('message', sourceOrigin)</code></li>
-<li>Samples: sandboxed content, sandbox</li>
+<li>Executa código "inseguro"</li>
+<li>Não possui acesso às APIs privilegiadas</li>
+<li>Envie mensagens para o conteúdo via <code>iframe.contentWindow.postMessage(message, targetOrigin)</code></li>
+<li>Receba mensagens via <code>window.addEventListener('message', handler)</code></li>
+<li>Responda a mensagem recebida utilizando <code>handler.source.postMessage('message', sourceOrigin)</code></li>
+<li>exemplos: sandboxed content, sandbox</li>
 </ul></article>
  
 </slide>
@@ -627,16 +608,16 @@ URL: https://code.google.com/p/io-2012-slides
 <slide  >
   
     <hgroup>
-      <h2>Embedding web content</h2>
+      <h2>Adicionando conteúdo web</h2>
       <h3>Webview</h3>
     </hgroup>
     <article ><ul class="build">
-<li>Run "unsafe" external code</li>
-<li>Has no access to privileged APIs</li>
-<li>Send messages to it using <code>webview.contentWindow.postMessage(message, targetOrigin)</code></li>
-<li>Receive messages in it using <code>window.addEventListener('message', handler)</code></li>
-<li>Send messages back to the embedder using <code>handler.source.postMessage('message', sourceOrigin)</code></li>
-<li>Samples: browser, webview</li>
+<li>Executa código "inseguro"</li>
+<li>Não possui acesso às APIs privilegiadas</li>
+<li>Envie mensagens para o conteúdo via<code>webview.contentWindow.postMessage(message, targetOrigin)</code></li>
+<li>Receba mensagens via <code>window.addEventListener('message', handler)</code></li>
+<li>Responda a mensagem recebida utilizando <code>handler.source.postMessage('message', sourceOrigin)</code></li>
+<li>exemplos: browser, webview</li>
 </ul></article>
  
 </slide>
@@ -645,7 +626,7 @@ URL: https://code.google.com/p/io-2012-slides
   
     <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
     <hgroup class="auto-fadein">
-      <h2>Questions?</h2>
+      <h2>Perguntas?</h2>
       <h3></h3>
     </hgroup>
   
@@ -655,7 +636,7 @@ URL: https://code.google.com/p/io-2012-slides
   
     <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
     <hgroup class="auto-fadein">
-      <h2>Debug/test</h2>
+      <h2>Debug/teste</h2>
       <h3></h3>
     </hgroup>
   
@@ -669,14 +650,14 @@ URL: https://code.google.com/p/io-2012-slides
     </hgroup>
     <article ><ul class="build">
 <li>DevTools<ul class="build">
-<li>apps from CWS: activate flag <a href="chrome://flags/#debug-packed-apps">enable debuging for packed apps</a></li>
+<li>Aplicativos vindos da CWS: Ative a flag <a href="chrome://flags/#debug-packed-apps">ativando debug para package apps</a></li>
 </ul>
 </li>
 <li>Apps Developer Tool<ul class="build">
-<li>activate flag <a href="chrome://flags/#enable-apps-devtool-app">enable apps-devtool app</a></li>
+<li>ative a flag <a href="chrome://flags/#enable-apps-devtool-app">ativando apps-devtool app</a></li>
 </ul>
 </li>
-<li>Remote debug<ul class="build">
+<li>Debug remoto<ul class="build">
 <li>chrome --remote-debugging-port=9222 --load-and-launch=APPDIR</li>
 </ul>
 </li>
@@ -687,25 +668,25 @@ URL: https://code.google.com/p/io-2012-slides
 <slide  >
   
     <hgroup>
-      <h2>Test</h2>
+      <h2>Teste</h2>
       <h3></h3>
     </hgroup>
     <article ><ul class="build">
 <li>
-<p>Unit tests:</p>
+<p>Testes unitários:</p>
 <ul class="build">
 <li>mock chrome.* APIs</li>
 </ul>
 </li>
 <li>
-<p>Functional/load/etc:</p>
+<p>Funcionais/carga/etc:</p>
 <ul class="build">
-<li>use remote debugging and automation over debugging protocol</li>
+<li>utilize debug remoto e automatize tarefas pelo protocolo de debug</li>
 <li>use WebDriver</li>
 </ul>
 </li>
 <li>
-<p>doesn't work: PhantomJS</p>
+<p>não funciona: PhantomJS</p>
 </li>
 </ul></article>
  
@@ -723,17 +704,32 @@ URL: https://code.google.com/p/io-2012-slides
 
 
 <slide class="thank-you-slide segue nobackground">
-  <aside class="gdbar right"><img src="images/google_developers_icon_128.png"></aside>
+  <aside class="gdbar right">
+  <!--  <img src="images/google_developers_icon_128.png">-->
+  </aside>
   <article class="flexbox vleft auto-fadein">
-    <h2>&lt;Thank You!&gt;</h2>
+    <h2>&lt;Obrigado!&gt;</h2>
     <p class="disclaimer">
-      Proudly created and presented in a Chromebook Pixel. No (feline) animals were harmed in the making of this preso.</p>
+      Mensagem Final FInal</p>
   </article>
   <p class="auto-fadein" data-config-contact>
     <!-- populated from slide_config.json -->
   </p>
 </slide>
 
+<slide class="thank-you-slide segue nobackground">
+  <article class="flexbox vleft auto-fadein">
+    <h2 class="auto-fadein" >&lt;Refer&ecirc;ncias!&gt;</h2>
+    <ul>
+      <li>Renato Magini talks - http://talks.renatomangini.com/2013/qconsp/index.html</li>
+      <li>Chrome Web Store - https://chrome.google.com/webstore?hl=pt-br</li>
+      <li>chrome *.APIs - http://developer.chrome.com/apps/api_index.html</li>
+      <li>Chrome Apps Samples - https://github.com/GoogleChrome/chrome-app-samples</li>
+    </ul>
+
+  </article>
+  
+</slide>
 <!-- <slide class="logoslide dark nobackground">
   <article class="flexbox vcenter">
     <span><img src="images/google_developers_logo_white.png"></span>
@@ -745,15 +741,16 @@ URL: https://code.google.com/p/io-2012-slides
 </slides>
 
 <script>
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-24426061-2']);
-_gaq.push(['_trackPageview']);
 
-(function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40917664-2', 'braraujo.github.io');
+  ga('send', 'pageview');
+
+
 </script>
 
 <!--[if IE]>

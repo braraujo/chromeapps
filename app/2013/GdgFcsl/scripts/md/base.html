@@ -64,17 +64,32 @@ URL: https://code.google.com/p/io-2012-slides
 {% endfor %}
 
 <slide class="thank-you-slide segue nobackground">
-  <aside class="gdbar right"><img src="images/google_developers_icon_128.png"></aside>
+  <aside class="gdbar right">
+  <!--  <img src="images/google_developers_icon_128.png">-->
+  </aside>
   <article class="flexbox vleft auto-fadein">
-    <h2>&lt;Thank You!&gt;</h2>
+    <h2>&lt;Obrigado!&gt;</h2>
     <p class="disclaimer">
-      Proudly created and presented in a Chromebook Pixel. No (feline) animals were harmed in the making of this preso.</p>
+      Mensagem Final FInal</p>
   </article>
   <p class="auto-fadein" data-config-contact>
     <!-- populated from slide_config.json -->
   </p>
 </slide>
 
+<slide class="thank-you-slide segue nobackground">
+  <article class="flexbox vleft auto-fadein">
+    <h2 class="auto-fadein" >&lt;Refer&ecirc;ncias!&gt;</h2>
+    <ul>
+      <li>Renato Magini talks - http://talks.renatomangini.com/2013/qconsp/index.html</li>
+      <li>Chrome Web Store - https://chrome.google.com/webstore?hl=pt-br</li>
+      <li>chrome *.APIs - http://developer.chrome.com/apps/api_index.html</li>
+      <li>Chrome Apps Samples - https://github.com/GoogleChrome/chrome-app-samples</li>
+    </ul>
+
+  </article>
+  
+</slide>
 <!-- <slide class="logoslide dark nobackground">
   <article class="flexbox vcenter">
     <span><img src="images/google_developers_logo_white.png"></span>
@@ -86,15 +101,16 @@ URL: https://code.google.com/p/io-2012-slides
 </slides>
 
 <script>
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-24426061-2']);
-_gaq.push(['_trackPageview']);
 
-(function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40917664-2', 'braraujo.github.io');
+  ga('send', 'pageview');
+
+
 </script>
 
 <!--[if IE]>
