@@ -19,7 +19,7 @@ var SLIDE_CONFIG = {
   // Author information
   presenters: [{
     name: 'Breno Araújo',
-    company: 'Spread Systems/Faculdade Cenecista<br>Google Developer Group Leader',
+    company: 'Spread Systems/Faculdade Cenecista<br>Google Developer Group Organizer',
     gplus: 'http://google.com/+brenopuc',
     twitter: '@brenosaraujo',
     github: 'http://github.com/braraujo'

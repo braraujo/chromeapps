@@ -183,7 +183,7 @@ title: Armazenamento
 Várias opções:
 
 - dados estruturados:
-    - IndexedDB: just like in the web
+    - IndexedDB: exatamente como no HTML5 tradicional
 
 - mapa chave/valor:
     - chrome.storage.local: Versão assíncrona do LocalStorage
@@ -278,7 +278,7 @@ chrome.identity [official doc](http://developer.chrome.com/apps/identity.html)
 
 title: Mensageria
 
-- de/para another app or extension:
+- de/para outra app ou extension:
     - chrome.runtime.sendMessage [docs](http://developer.chrome.com/apps/runtime.html#method-sendMessage)
     - chrome.runtime.onMessageExternal [docs](http://developer.chrome.com/apps/runtime.html#event-onMessageExternal)
 - de uma página web:
@@ -387,8 +387,17 @@ build_lists: true
 
 - não funciona: PhantomJS
 
+
+
 ---
 
-title: Publish
-class: segue dark nobackground
+title: Exemplos
+build_lists: true
+
+- Extensions
+    - Busca CEP
+
+- Apps
+    - Simple Game Pad
+    - FreeWay (Atravesse a Galinha)
 
